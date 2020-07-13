@@ -1,4 +1,4 @@
-pP# Conceitos do Node
+# Conceitos do Node
 
 ## O que é o Node.js?
 

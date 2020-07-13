@@ -26,16 +26,16 @@
 
 <ul>
   <li>
-    <a href="#-introducao">Introdução</a>
+    <a href="#-introdução">Introdução</a>
     <ul>
-      <li><a href="#-documentacao">Documentação</a></li>
+      <li><a href="#-documentação">Documentação</a></li>
       <li><a href="#-feito-com">Feito Com</a></li>
     </ul>
   </li>
   <li>
     <a href="#-instalação">Instalação</a>
     <ul>
-      <li><a href="#-pre-requisitos">Pré-requisitos</a></li>
+      <li><a href="#-requisitos">Requisitos</a></li>
       <li><a href="#-clone">Clone</a></li>
       <li><a href="#-setup">Setup</a></li>
     </ul>
@@ -53,7 +53,7 @@
 
 - Para acessar a Documentação basta acessar o link abaixo:
 
-- #### [Documentação](documentation/README.md)
+**[Documentação](documentation/README.md)**
 
 ### 🛠 Feito com
 
@@ -63,12 +63,12 @@
 
 ## 🚀 Instalação
 
-### Pré-requisitos
+### 🧾 Requisitos
 
 - Para rodar qualquer aplicação feita em Node você precisa configurar o Ambiente de Desenvolvimento na sua máquina;
 - Para configurar o ambiente, basta [**acessar esse link**](https://nodejs.org/en/), baixar e instalar a versão LTS do Node.
 
-### Clone
+### 👯‍♀️ Clone
 
 - Clone esse repositório para sua máquina local:
 
@@ -76,7 +76,7 @@
 https://github.com/csorlandi/nodejs-concepts
 ```
 
-### Setup
+### 🎛 Setup
 
 - Clone ou Baixe o projeto na sua máquina;
 
