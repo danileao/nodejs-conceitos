@@ -1,4 +1,4 @@
-# Conceitos do Node
+pP# Conceitos do Node
 
 ## O que é o Node.js?
 
@@ -30,7 +30,9 @@
 - Background threads;
 - Non-blocking I/O;
 
-![Call Stack Example](../readme/call-stack.png)
+<p align="center">
+  <img src="../readme/call-stack.png" width="404" height="416">
+</p>
 
 ## Frameworks
 
