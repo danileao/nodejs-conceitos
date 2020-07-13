@@ -92,3 +92,45 @@
   - 500: INTERNAL SERVER ERROR
 
 > 💡 BORA CODAR!
+
+# Criando projeto Node
+
+- Criar pasta para o projeto;
+- Navegar até a pasta no terminal;
+- Executar `yarn init -y` para iniciar o projeto;
+  - O comando acima vai criar o `package.json` , um arquivo que guarda algumas informações sobre o projeto;
+- Abrir o projeto no VS Code com `code .`;
+  - Caso não tenha o comando `code .` reconhecido no terminal:
+    - Abra uma janela do VS Code;
+    - Aperte `Ctrl` + `Shift` + `P` (ou `Cmd` + `Shift` + `P` );
+    - Pesquise e selecione a opção: `Install 'code' command in PATH` ;
+- Crie uma pasta `src` dentro do projeto;
+- Dentro da `src` crie um `index.js` ;
+- No terminal execute `yarn add express` para instalar o Express;
+- No arquivo `index.js` insira o código:
+
+```jsx
+// Importa o Express instalado
+const express = require('express');
+
+// Cria uma instância do Express
+const app = express();
+
+// Cria uma rota acessível pelo método GET e com o endereço /projects
+app.get('/projects', (request, response) => {
+  // Retorna para o cliente uma mensagem em formato de texto
+  return response.send('Hello World');
+});
+
+// Define que a aplicação vai rodar na porta 3333, por exemplo:
+// http://localhost:3333
+app.listen(3333);
+```
+
+- Para executar o código, execute no terminal: `node src/index.js` ;
+- Abra o Browser e acesse: `http://localhost:3333/projects` ;
+- Modifique o `/projects` para `/` para poder acessar com o endereço `http://localhost:3333` ;
+- Troque o `.send('Hello World')` por `.json({ message: 'Hello World' })` para que o retorno seja sempre no padrão JSON;
+- Para ver o funcionamento, pare a execução no terminal com `Ctrl` + `C` e execute novamente `node src/index.js` ;
+- Para finalizar acesse `http://localhost:3333` e veja o resultado;
+- Não usamos o `request` da rota pois é nele onde ficam armazenadas as informações da rota acessada, tal como os dados enviados pelo usuário, veremos como fazer uso dela nas próximas aulas;
