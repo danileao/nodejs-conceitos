@@ -134,3 +134,25 @@ app.listen(3333);
 - Para ver o funcionamento, pare a execução no terminal com `Ctrl` + `C` e execute novamente `node src/index.js` ;
 - Para finalizar acesse `http://localhost:3333` e veja o resultado;
 - Não usamos o `request` da rota pois é nele onde ficam armazenadas as informações da rota acessada, tal como os dados enviados pelo usuário, veremos como fazer uso dela nas próximas aulas;
+
+# Configurando Nodemon
+
+- O Nodemon é uma ferramenta utilizada por toda comunidade Node para fazer a atualização automática do servidor quando o Node detectar uma  alteração no código;
+- Instalar o Nodemon executando `yarn add nodemon -D` para instalar como dependência de desenvolvimento;
+- Há 2 maneiras de se executar o Nodemon;
+  - A primeira e mais comum é executando no terminal `nodemon src/index.js` no terminal;
+  - A segunda maneira é:
+    - Criar um índice `scripts` no `package.json`;
+    - Dentro do `scripts` inserir o índice `"dev": "nodemon"`;
+    - No índice `main` modificar o valor para ficar: `"main": "src/index.js"`;
+    - Executar no terminal `yarn dev`;
+- Modificar a `message` de `Hello World` para `Hello GoStack` e salvar para ver o resultado;
+- Adicionar uma arrow function no segundo parâmetro da função `app.listen` para que uma mensagem seja disparada automaticamente sempre que o servidor for reiniciado, ficando dessa forma:
+
+```javascript
+app.listen(3333, () => {
+  console.log('🚀 Back-end started!');
+});
+```
+
+- Ao salvar o arquivo o resultado deve ser aparente no terminal, com o servidor reiniciando automaticamente;
